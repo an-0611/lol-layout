@@ -1,0 +1,308 @@
+html, body {
+  position: relative;
+  height: 100%;
+}
+body {
+  /*background: #eee;*/
+  background: url(../img/bg-gray.jpg);
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color:#000;
+  margin: 0;
+  padding: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6 {	
+	padding: 0;
+	margin: 0;
+}
+
+.swiper-container {
+	width: 100%;
+	height: 100%;
+}
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	/*display: flex;*/
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+#header {
+	width: 100%;
+    height: 60px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99999;
+	background: url(../img/bd-nav.jpg) 0 100% repeat-x #06181e;
+}
+
+#header .logo {
+	width: 108px;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+
+#header .logo a {
+	display: block;
+    height: 40px;
+	background: url(../img/logo.png);
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+
+#navBtn {
+	width: 30px;
+	height: 30px;
+	padding: 0 5px;
+	border: 1px solid #183B47;
+	box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	/*left: 0;*/
+	right: 25px;
+	margin: auto 0;
+}
+
+#navBtn:before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 2px;
+	background: #B5B5B5;
+	position: relative;
+	/*top: 6px;*/
+	top: 13px;
+	/*top: 20px;*/
+	box-shadow: 0px -7px #B5B5B5, 0px 7px #B5B5B5;
+}
+
+#content {
+	width: 100%;
+	margin-top: 60px;
+}
+
+#content .swiper-slide img{
+	width: 100%;
+	/*height: 136px;*/
+	/*padding: 0 0 4.5%;*/
+}
+
+#content .news {
+	padding: 10px;
+}
+
+#content .news .newItem {
+	padding: 10px;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+	background: #CFD0D4;
+	vertical-align: top;
+}
+
+#content .news .newItem img {
+	width: 100%;
+	display: block;
+}
+
+#content .news .newItem .info {
+	padding: 0 15px;
+	overflow: hidden;
+	background: #EFEFEF;
+}
+
+#content .news .newItem .info h2 {
+	font: 20px/42px Helvetica, 'Microsoft YaHei', '\5FAE\8F6F\96C5\9ED1', PMingLiU, '\65B0\7D30\660E\9AD4';
+    color: #257372;
+    /*display: inline;*/
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 42px;
+}
+
+#content .news .newItem .info p {
+	margin-bottom: 15px;
+}
+
+#content .news .newItem .newTagBox p {
+	text-align: right;
+	margin-top: 8px;
+	font-size: 12px;
+}
+
+#content .news .newItem .newTagBox p a {
+	color: black;
+	text-decoration: none;
+}
+
+#footer {
+	width: 100%;
+	padding: 0 10px;
+	margin-top: -20px;
+	margin-bottom: 50px;
+	box-sizing: border-box;
+}
+
+#footer .footer-logo {
+	margin: 10px 0;
+	display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#footer #riot-logo {
+	display: block;
+    width: 68px;
+    height: 52px;
+    background-image: url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/footer/copyright-sprite-32.png);
+}
+
+#footer #garena-logo {
+	margin: 3px 0 0;
+    display: block;
+    width: 45px;
+    height: 42px;
+    background-image: url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/footer/copyright-sprite-32.png);
+    background-position: 80px -53px;
+}
+
+#footer .copyright { 
+	color: #535353;
+    font-size: 12px;
+}
+
+#footer .notify {
+	margin-top: 5px;
+	display: flex;
+	justify-content: space-around;
+}
+
+#footer .notify .years15 {
+	width: 48px;
+    height: 47px;
+    background-image: url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/footer/copyright-sprite-32.png);
+    background-position: -69px 0;
+}
+
+#footer .notify .text {
+	width: 75%;
+}
+
+#footer .notify .text p {
+	font-size: 12px;
+    word-break: keep-all;
+}
+
+#footer .notify .fbimg {
+	display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/footer/copyright-sprite-32.png);
+    background-position: -118px 0;
+}
+
+@media screen and (min-width: 789px) {
+    #content .news .newItem{
+    	display: inline-block;
+    	width: 49.7%;
+    }
+    #content .news .newItem .info {
+		height: 100px;
+    }
+    #footer {
+    	display: flex;
+    	align-items: center;
+    }
+}
+
+@media screen and (min-width: 1001px) {
+	#navBtn {
+		display: none;
+	}
+	#header {
+		position: relative;
+		height: auto;
+		display: flex;
+		justify-content: space-evenly;
+	}
+	#header .logo {
+		width: 162px;
+    	margin: 0px 15px;
+    	padding: 20px 0;
+    	display: inline-block;
+	}
+	#header .logo a {
+		height: 60px;
+		background-size: unset;
+	}
+	#content {
+		margin-top: 0px;
+	}
+	#content .alert {
+		display: block!important;
+		padding: 10px;
+	}
+    #content .alert .alertBox {
+    	padding: 10px 35px;
+    	margin: 15px 0;
+    	letter-spacing: 1px;
+    	background: #cfd0d4;
+    	border: 1px solid #c0c1c4;
+    }
+    #content .news .newItem{
+    	/*display: inline-block;*/
+    	width: 33%;
+    }
+    #content .news .newItem .info {
+		height: 100px;
+    }
+
+    #header .pc-nav {
+    	width: 80%;
+    	height: 100px;
+		display: flex!important;
+		align-items: center;
+		justify-content: center;
+    }
+
+    #header .pc-nav ul {
+    	width: 100%;
+    	height: 100%;
+    	margin: 0;
+    	padding: 0;
+    }
+
+    #header .pc-nav ul li {
+		width: 11.5%;
+		height: 100%;
+		display: inline-block;
+    	text-align: center;
+    }
+    #header .pc-nav ul li a {
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
+    	font-size: 18px;
+    	height: 98%;
+    	color: white;
+    	text-decoration: none;
+    }
+    #header .pc-nav ul li a:hover {
+    	color: red;
+    	border-bottom: 3px solid white;
+    }
+}
